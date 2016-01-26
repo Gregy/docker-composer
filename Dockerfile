@@ -1,7 +1,7 @@
 FROM php:latest
 MAINTAINER Petr Gregor <docker@gregy.cz>
 
-RUN docker-php-ext-install mbstring
+RUN docker-php-ext-install mbstring zip
 
 RUN apt-get update \
 	&& apt-get install -y git \
